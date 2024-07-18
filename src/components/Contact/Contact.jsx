@@ -2,8 +2,8 @@ import css from './Contact.module.css';
 import { FaUser } from 'react-icons/fa6';
 import { FaPhone } from 'react-icons/fa6';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact } from '../../redux/slice/contactsSlice.js';
-import { selectNameFilter } from '../../redux/slice/filtersSlice.js';
+import { deleteContact } from '../../redux/contactsSlice.js';
+import { selectNameFilter } from '../../redux/filtersSlice.js';
 
 export default function Contact({ contact }) {
   const { id, name, number } = contact;
